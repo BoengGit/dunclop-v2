@@ -52,11 +52,8 @@
                                                             alt="Image Category" class="cate-image">
                                                     </td>
                                                     <td style="width: 100px">
-                                                        {{-- <a class="btn btn-outline-secondary btn-sm edit" title="Edit">
-                                                            <i class="fas fa-pencil-alt"></i>
-                                                        </a> --}}
-                                                        <button class="btn btn-primary">Edit</button>
-                                                        <button class="btn btn-danger">Delete</button>
+                                                        <a href="{{ url('edit-prod/'.$item->id) }}" class="btn btn-primary">Edit</a>
+                                                        <a class="btn btn-danger">Delete</a>
                                                     </td>
                                                 </tr>
                                             @endforeach
