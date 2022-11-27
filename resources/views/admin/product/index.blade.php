@@ -35,8 +35,9 @@
                                         <thead>
                                             <tr style="cursor: pointer;">
                                                 <th>Id</th>
+                                                <th>Category</th>
                                                 <th>Name</th>
-                                                <th>Description</th>
+                                                <th>Selling Price</th>
                                                 <th>Image</th>
                                                 <th>Action</th>
                                             </tr>
@@ -45,14 +46,15 @@
                                             @foreach ($products as $item)
                                                 <tr data-id="1" style="cursor: pointer;">
                                                     <td data-field="id" style="width: 80px">{{ $item->id }}</td>
+                                                    <td data-field="id" >{{ $item->category->name }}</td>
                                                     <td data-field="name">{{ $item->name }}</td>
-                                                    <td data-field="age">{{ $item->description }}</td>
+                                                    <td data-field="age">{{ $item->selling_price }}</td>
                                                     <td data-field="gender">
                                                         <img src="{{ asset('assets/uploads/products/' . $item->image) }}"
                                                             alt="Image Product" class="cate-image">
                                                     </td>
                                                     <td style="width: 100px">
-                                                        <a href="{{ url('edit-prod/'.$item->id) }}" class="btn btn-primary">Edit</a>
+                                                        <a href="{{ url('edit-product/'.$item->id) }}" class="btn btn-primary">Edit</a>
                                                         <a href="{{ url('delete-category/'.$item->id) }}" class="btn btn-danger">Delete</a>
                                                     </td>
                                                 </tr>
