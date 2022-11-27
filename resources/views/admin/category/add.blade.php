@@ -16,7 +16,7 @@
                                 <ol class="breadcrumb m-0">
                                     <li class="breadcrumb-item"><a href="javascript: void(0);">Upcube</a></li>
                                     <li class="breadcrumb-item active"><a href="javascript: void(0);">Category</a></li>
-                                    <li class="breadcrumb-item active">Category</li>
+                                    <li class="breadcrumb-item active">Add Category</li>
                                 </ol>
                             </div>
 
