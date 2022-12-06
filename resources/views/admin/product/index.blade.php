@@ -55,7 +55,7 @@
                                                     </td>
                                                     <td style="width: 100px">
                                                         <a href="{{ url('edit-product/'.$item->id) }}" class="btn btn-primary">Edit</a>
-                                                        <a href="{{ url('delete-category/'.$item->id) }}" class="btn btn-danger">Delete</a>
+                                                        <a href="{{ url('delete-product/'.$item->id) }}" class="btn btn-danger">Delete</a>
                                                     </td>
                                                 </tr>
                                             @endforeach
