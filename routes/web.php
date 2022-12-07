@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ProductController;
-use App\Http\Controllers\Frontend\FrontendController as FrontendFrontendController;
+use App\Http\Controllers\Frontend\FrontendController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -21,7 +21,8 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', [FrontendFrontendController::class, 'index']);
+Route::get('/', [FrontendController::class, 'index']);
+Route::get('category', [FrontendController::class, 'category']);
 
 Auth::routes();
 
