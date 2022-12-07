@@ -23,7 +23,7 @@
 
 </head>
 
-<body data-topbar="dark">
+<body>
 
     @include('layouts.inc.frontnavbar')
 
