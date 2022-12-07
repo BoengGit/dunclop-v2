@@ -83,7 +83,7 @@
                                                         class="btn btn-primary bootstrap-touchspin-down"
                                                         type="button">-</button></span><span
                                                     class="input-group-addon bootstrap-touchspin-prefix input-group-prepend"><span
-                                                        class="input-group-text">$</span></span><input id="demo2"
+                                                        class="input-group-text">Rp</span></span><input id="demo2"
                                                     type="number" value="0" name="original_price"
                                                     class="form-control"><span
                                                     class="input-group-btn input-group-append"><button
@@ -100,7 +100,7 @@
                                                         class="btn btn-primary bootstrap-touchspin-down"
                                                         type="button">-</button></span><span
                                                     class="input-group-addon bootstrap-touchspin-prefix input-group-prepend"><span
-                                                        class="input-group-text">$</span></span><input id="demo2"
+                                                        class="input-group-text">Rp</span></span><input id="demo2"
                                                     type="number" value="0" name="selling_price"
                                                     class="form-control"><span
                                                     class="input-group-btn input-group-append"><button
@@ -117,7 +117,7 @@
                                                         class="btn btn-primary bootstrap-touchspin-down"
                                                         type="button">-</button></span><span
                                                     class="input-group-addon bootstrap-touchspin-prefix input-group-prepend"><span
-                                                        class="input-group-text">$</span></span><input id="demo2"
+                                                        class="input-group-text">Rp</span></span><input id="demo2"
                                                     type="number" value="0" name="tax"
                                                     class="form-control"><span
                                                     class="input-group-btn input-group-append"><button

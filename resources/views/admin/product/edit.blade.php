@@ -81,7 +81,7 @@
                                                         class="btn btn-primary bootstrap-touchspin-down"
                                                         type="button">-</button></span><span
                                                     class="input-group-addon bootstrap-touchspin-prefix input-group-prepend"><span
-                                                        class="input-group-text">$</span></span><input id="demo2"
+                                                        class="input-group-text">Rp</span></span><input id="demo2"
                                                     type="number" value="{{ $products->original_price }}" name="original_price"
                                                     class="form-control"><span
                                                     class="input-group-btn input-group-append"><button
@@ -98,7 +98,7 @@
                                                         class="btn btn-primary bootstrap-touchspin-down"
                                                         type="button">-</button></span><span
                                                     class="input-group-addon bootstrap-touchspin-prefix input-group-prepend"><span
-                                                        class="input-group-text">$</span></span><input id="demo2"
+                                                        class="input-group-text">Rp</span></span><input id="demo2"
                                                     type="number" value="{{ $products->selling_price }}" name="selling_price"
                                                     class="form-control"><span
                                                     class="input-group-btn input-group-append"><button
@@ -115,7 +115,7 @@
                                                         class="btn btn-primary bootstrap-touchspin-down"
                                                         type="button">-</button></span><span
                                                     class="input-group-addon bootstrap-touchspin-prefix input-group-prepend"><span
-                                                        class="input-group-text">$</span></span><input id="demo2"
+                                                        class="input-group-text">Rp</span></span><input id="demo2"
                                                     type="number" value="{{ $products->tax }}" name="tax"
                                                     class="form-control"><span
                                                     class="input-group-btn input-group-append"><button
