@@ -10,10 +10,10 @@
                 <a href="{{ url('category') }}">
                     Collections
                 </a> /
-                <a href="{{ url('category/'.$products->category->slug) }}">
+                <a href="{{ url('category/' . $products->category->slug) }}">
                     {{ $products->category->name }}
                 </a> /
-                <a href="{{ url('category/'.$products->category->slug.'/'.$products->slug) }}">
+                <a href="{{ url('category/' . $products->category->slug . '/' . $products->slug) }}">
                     {{ $products->name }}
                 </a>
             </h6>
@@ -61,8 +61,10 @@
                             </div>
                             <div class="col-md-10">
                                 <br />
-                                <button type="button" class="btn btn-success me-3 addToCartBtn float-start">Add to Cart
-                                    <i class="fa fa-heart"></i> </button>
+                                @if ($products->qty > 0)
+                                    <button type="button" class="btn btn-success me-3 addToCartBtn float-start">Add to Cart
+                                        <i class="fa fa-heart"></i> </button>
+                                @endif
                                 <button type="button" class="btn btn-primary me-3 float-start">Add to Wishlist <i
                                         class="fa fa-shopping-cart"></i> </button>
                             </div>
@@ -74,4 +76,3 @@
     </div>
 
 @endsection
-
