@@ -20,7 +20,7 @@ class CartController extends Controller
 
             if ($prod_check) {
                 if (Cart::where('prod_id', $product_id)->where('user_id', Auth::id())->exists()) {
-                    return response()->json(['status' => $prod_check->name."Already Added to cart"]);
+                    return response()->json(['status' => $prod_check->name . "Already Added to cart"]);
                 } else {
                     $cartItem = new Cart();
                     $cartItem->prod_id = $product_id;
@@ -28,8 +28,28 @@ class CartController extends Controller
                     $cartItem->prod_qty = $product_qty;
 
                     $cartItem->save();
-                    return response()->json(['status' => $prod_check->name."Added to cart"]);
+                    return response()->json(['status' => $prod_check->name . "Added to cart"]);
                 }
+            }
+        } else {
+            return response()->json(['status' => "Login to Continue"]);
+        }
+    }
+
+    public function viewcart()
+    {
+        $cartitems = Cart::where('user_id', Auth::id())->get();
+        return view('frontend.cart', compact('cartitems'));
+    }
+
+    public function deleteproduct(Request $request)
+    {
+        if (Auth::check()) {
+            $prod_id = $request->input('prod_id');
+            if (Cart::where('prod_id', $prod_id)->where('user_id', Auth::id())->exists()) {
+                $cartItem = Cart::where('prod_id', $prod_id)->where('user_id', Auth::id())->first();
+                $cartItem->delete();
+                return response()->json(['status' => "Product delete successfully"]);
             }
         } else {
             return response()->json(['status' => "Login to Continue"]);
