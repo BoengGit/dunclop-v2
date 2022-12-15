@@ -7,6 +7,7 @@
 @section('content')
     <div class="container mt-3">
         <form action="{{ url('place-order') }}" method="POST">
+            {{ csrf_field() }}
             <div class="row">
                 <div class="col-md-7">
                     <div class="card">
@@ -16,43 +17,43 @@
                             <div class="row checkout-form">
                                 <div class="col-md-6">
                                     <label for="">First Name</label>
-                                    <input type="text" class="form-control" placeholder="Enter First Name">
+                                    <input type="text" name="fname" class="form-control" placeholder="Enter First Name">
                                 </div>
                                 <div class="col-md-6">
                                     <label for="">Last Name</label>
-                                    <input type="text" class="form-control" placeholder="Enter Last Name">
+                                    <input type="text" name="lname" class="form-control" placeholder="Enter Last Name">
                                 </div>
                                 <div class="col-md-6 mt-3">
                                     <label for="">Email</label>
-                                    <input type="text" class="form-control" placeholder="Enter Email">
+                                    <input type="text" class="form-control" name="email" placeholder="Enter Email">
                                 </div>
                                 <div class="col-md-6 mt-3">
                                     <label for="">Phone Number</label>
-                                    <input type="text" class="form-control" placeholder="Enter Phone Number">
+                                    <input type="text" class="form-control" name="phone" placeholder="Enter Phone Number">
                                 </div>
                                 <div class="col-md-6 mt-3">
                                     <label for="">Address 1</label>
-                                    <input type="text" class="form-control" placeholder="Enter Address 1">
+                                    <input type="text" class="form-control" name="address1" placeholder="Enter Address 1">
                                 </div>
                                 <div class="col-md-6 mt-3">
                                     <label for="">Address 2</label>
-                                    <input type="text" class="form-control" placeholder="Enter Address 2">
+                                    <input type="text" class="form-control" name="address2" placeholder="Enter Address 2">
                                 </div>
                                 <div class="col-md-6 mt-3">
                                     <label for="">City</label>
-                                    <input type="text" class="form-control" placeholder="Enter City">
-                                </div>
-                                <div class="col-md-6 mt-3">
-                                    <label for="">City</label>
-                                    <input type="text" class="form-control" placeholder="Enter City">
+                                    <input type="text" class="form-control" name="city" placeholder="Enter City">
                                 </div>
                                 <div class="col-md-6 mt-3">
                                     <label for="">State</label>
-                                    <input type="text" class="form-control" placeholder="Enter State">
+                                    <input type="text" class="form-control" name="state" placeholder="Enter City">
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <label for="">Country</label>
+                                    <input type="text" class="form-control" name="country" placeholder="Enter State">
                                 </div>
                                 <div class="col-md-6 mt-3">
                                     <label for="">Pin Code</label>
-                                    <input type="text" class="form-control" placeholder="Enter Pin Code">
+                                    <input type="text" class="form-control" name="pincode" placeholder="Enter Pin Code">
                                 </div>
                             </div>
                         </div>
