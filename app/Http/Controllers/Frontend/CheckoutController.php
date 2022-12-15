@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use App\Models\Cart;
+use App\Models\Order;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -22,5 +23,10 @@ class CheckoutController extends Controller
         $cartitems = Cart::where('user_id', Auth::id())->get();
 
         return view('frontend.checkout', compact('cartitems'));
+    }
+
+    public function placeorder(Request $request)
+    {
+        $order = new Order();
     }
 }
